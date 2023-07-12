@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(25, 28, 25);
+}
+:root {
+    --background-color: rgb(21, 22, 21);
+    --font-color: yellowgreen;
+}
+@font-face {
+    font-family: Bubble;
+    src: url(../fontstyle/Super\ Bubble.ttf);
+}
+.hero {
+    width: 100%;
+    height: 87vh;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.hero img {
+    width: 500px;
+}
+.signup {
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.signup h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: Bubble;
+    letter-spacing: 4px;
+    color: var(--font-color);
+    margin-bottom: 3rem;
+}
+.firstname {
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    width: 360px;
+    padding: 0 .5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.firstname::before {
+    position: absolute;
+    content: "put something on this field!";
+    top: 60px;
+    color: rgb(252, 50, 50);
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    transition: 0.3s;
+}
+.active::before {
+    opacity: 1;
+    transition: 0.3s;
+}
+.firstname input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 1rem 1rem;
+    color: var(--font-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.lastname {
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    width: 360px;
+    padding: 0 .5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.lastname::before {
+    position: absolute;
+    content: "put something on this field!";
+    top: 60px;
+    color: rgb(252, 50, 50);
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    transition: 0.3s;
+}
+.lastname2::before {
+    opacity: 1;
+    transition: 0.3s;
+}
+.lastname input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 1rem 1rem;
+    color: var(--font-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.username::after {
+    position: absolute;
+    content: "put something on this field!";
+    top: 60px;
+    color: rgb(252, 50, 50);
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    transition: 0.3s;
+}
+.active::after {
+    opacity: 1;
+    transition: 0.3s;
+}
+.username {
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    width: 360px;
+    padding: 0 .5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.username input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 1rem 1rem;
+    color: var(--font-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+.password::before {
+    position: absolute;
+    content: "put something on this field!";
+    top: 60px;
+    color: rgb(252, 50, 50);
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    transition: 0.3s;
+}
+.password2::before {
+    opacity: 1;
+    transition: 0.3s;
+}
+.password {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    width: 360px;
+    padding: 0 .5rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+.password input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 1rem 1rem;
+    color: var(--font-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+#show {
+    display: none;
+}
+.hero button {
+    width: 360px;
+    outline: none;
+    border: 2px solid #fff;
+    font-family: Bubble;
+    font-size: 24px;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    color: var(--font-color);
+    letter-spacing: 6px;
+    transition: 0.3s;
+}
+.hero button:hover {
+    border-radius: 8px;
+    transition: 0.3s;
+    background-color: var(--background-color);
+    transform: translateY(-4px);
+}
+.left-arrow {
+    margin: 2rem 0 0 2rem;
+}
+
+@media screen and (max-width: 1226px) {
+    .signup {
+        align-items: center;
+    }
+}
+
+.for-username {
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#for-username {
+    display: none;
+}
+.for-username h3 {
+    font-size: 56px;
+    font-family: Bubble;
+    letter-spacing: 6px;
+    color: var(--font-color);
+    margin-bottom: 4rem;
+}
+.for-username input {
+    width: 360px;
+    height: 40px;
+    outline: none;
+    border: 2px solid #fff;
+    color: var(--font-color);
+    font-size: 32px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.for-username input::placeholder {
+    text-align: center;
+}
+.for-username button {
+    width: 360px;
+    padding: 1rem 2rem;
+    outline: none;
+    border: 3px solid #fff;
+    font-family: Bubble;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.for-username button:hover {
+    transform: translateY(-4px);
+    color: var(--font-color);
+    border-radius: 8px;
+    background-color: var(--background-color);
+    transition: 0.3s;
+}
+.go-to-login {
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+.go-to-login h2 {
+    font-size: 48px;
+    font-family: Bubble;
+    letter-spacing: 6px;
+    margin-bottom: 3rem;
+    color: var(--font-color);
+}
+.go-to-login button {
+    width: 300px;
+    padding: 1rem 2rem;
+    font-family: Bubble;
+    color: #fff;
+    background-color: var(--font-color);
+    outline: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    letter-spacing: 4px;
+    position: relative;
+    transition: 0.3s;
+}
+.go-to-login button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: var(--background-color);
+    transition: 0.3s;
+}
+.go-to-login button:hover:before {
+    width: 100%;
+    transition: 0.3s;
+    z-index: -1;
+    border: 1px solid var(--font-color);
+}
+.go-to-login button:hover {
+    color: var(--font-color);
+    transition: 0.3s;
+    z-index: 1;
+}

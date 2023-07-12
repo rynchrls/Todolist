@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="today.css">
+    <script src="today.js" defer></script>
+</head>
+<body>
+    <section class="container">
+        <div class="nav-btn">
+        </div>
+        <div class="header-container">
+            <div class="header">
+                <h1 class="todo-title">Ryan's To do</h1>
+                <div class="for-list">
+                    <a href="../donetask.html"><svg class="list" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" style="fill: yellowgreen;"><path d="M19 4h-3V2h-2v2h-4V2H8v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 10H7v-2h5v2zm5-4H7V8h10v2z"></path></svg></a>
+                    <div class="count">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="navlinks">
+            <div class="link">
+                <a href="../home.html">HOME</a>
+                <a href="today.html">Today</a>
+                <a href="../week/week.html">This week</a>
+                <a href="../month/month.html">This year</a>
+                <a href="../year/year.html">This month</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container2">
+        <div class="menu">
+            <div class="menu-bar">
+                <h6>Menu</h6>
+                <svg class="menuIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: var(--sub-color);"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+            </div>
+            <div class="search">
+                <div class="searchContent">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(77, 77, 77);"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            <div class="task">
+                <h6 class="title">Task</h6>
+                <div class="taskList">
+                    <a href="today.html">
+                        <div class="block">
+                            <div class="titleElement">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(90, 90, 90);"><path d="M2 2h2v20H2zM21 13H7a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1zm-1 5H8v-3h12zM7 11h10a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1zm1-5h8v3H8z"></path></svg>
+                                <h6>Today</h6>
+                            </div>
+                            <div class="countList">
+                                <div id="today">0</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../week/week.html">
+                        <div class="block">
+                            <div class="titleElement">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(90, 90, 90);"><path d="M19 4h-3V2h-2v2h-4V2H8v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM5 20V7h14V6l.002 14H5z"></path><path d="M7 10v2h10V9H7z"></path></svg>
+                                <h6>This week</h6>
+                            </div>
+                            <div class="countList">
+                                <div id="week">0</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../month/month.html">
+                        <div class="block">
+                            <div class="titleElement">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(90, 90, 90);"><path d="M20 5h-8.586L9.707 3.293A.996.996 0 0 0 9 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z"></path><path d="M7.874 12h8v2h-8z"></path></svg>
+                                <h6 id="month">This month</h6>
+                            </div>
+                            <div class="countList">
+                                <div>0</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../year/year.html">
+                        <div class="block">
+                            <div class="titleElement">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="fill: rgb(90, 90, 90);"><path d="M22 7.999a1 1 0 0 0-.516-.874l-9.022-5a1.003 1.003 0 0 0-.968 0l-8.978 4.96a1 1 0 0 0-.003 1.748l9.022 5.04a.995.995 0 0 0 .973.001l8.978-5A1 1 0 0 0 22 7.999zm-9.977 3.855L5.06 7.965l6.917-3.822 6.964 3.859-6.918 3.852z"></path><path d="M20.515 11.126 12 15.856l-8.515-4.73-.971 1.748 9 5a1 1 0 0 0 .971 0l9-5-.97-1.748z"></path><path d="M20.515 15.126 12 19.856l-8.515-4.73-.971 1.748 9 5a1 1 0 0 0 .971 0l9-5-.97-1.748z"></path></svg>
+                                <h6 id="year">This year</h6>
+                            </div>
+                            <div class="countList">
+                                <div>0</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="task">
+                <h6 class="title">Lists</h6>
+                <div class="taskList">
+                    <a href="../Work/work.html">
+                        <div class="block">
+                            <div class="titleElement">
+                                <div class="work"></div>
+                                <h6>Work</h6>
+                            </div>
+                            <div class="countList">
+                                <div id="work">0</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../Study/study.html">
+                        <div class="block">
+                            <div class="titleElement">
+                                <div class="study"></div>
+                                <h6>Study</h6>
+                            </div>
+                            <div class="countList">
+                                <div id="study">0</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../Personal/personal.html">
+                        <div class="block">
+                            <div class="titleElement">
+                                <div class="personal"></div>
+                                <h6>Personal</h6>
+                            </div>
+                            <div class="countList">
+                                <div id="study">0</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="signout">
+                <div class="signoutElements">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: var(--sub-color);"><path d="M16 13v-2H7V8l-5 4 5 4v-3z"></path><path d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z"></path></svg>
+                    <div class="signingOut">Sign out</div>
+                </div>
+            </div>
+        </div>
+        <div class="addTask">
+            <div class="dateTask">
+                <div class="Taskadd">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: var(--sub-color);"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>
+                    <input type="text" placeholder="add new task..." class="typeTask">
+                </div>
+                <div class="todayCount">0</div>
+            </div>
+            <div class="taskAdded">
+                <div class="per-task">
+                    <div class="inputTask">
+                        <div class="forinputTask">
+                            <div class="check">
+                                <div class="checked"></div>
+                            </div>
+                            <h6 class="taskText">Ako ay maghuhugas mamaya</h6>
+                        </div>
+                        <div class="dash">></div>
+                    </div>  
+                    <div class="dueAndType">
+                        <input type="date" class="Date">
+                        <div class="typeofTag">P</div>
+                        <div class="typeofList">
+                            <div class="box"></div>
+                            <h4>Personal</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="taskTodo">
+            <div id="task">Task:</div>
+            <div class="for-title-descrip">
+                <h5>Ako'y maghuhugas mamaya</h5>
+                <textarea name="description" id="description" cols="30" rows="10"  placeholder="Description"></textarea>
+            </div>
+            <div class="for-details">
+                <div id="List">
+                    <h4>List</h4>
+                    <div class="dropdown">
+                        <div class="select">
+                            <span class="selected">Personal</span>
+                            <div class="caret">></div>
+                        </div>
+                        <ul class="meNu">
+                            <li>Work</li>
+                            <li>Study</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Duedate">
+                    <h4>Due date: </h4>
+                    <input type="date" class="firstDate">
+                </div>
+                <div class="tags">
+                    <h4>Tags: </h4>
+                    <div class="for-tags">
+                        <div class="prio">P</div>
+                        <div class="least-prio">LP</div>
+                    </div>
+                </div>
+                <div class="for-delete-save">
+                    <div class="del-btn">Delete task</div>
+                    <div class="save-btn">Save Changes</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
+
